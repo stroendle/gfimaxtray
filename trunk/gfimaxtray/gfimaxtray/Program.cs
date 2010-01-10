@@ -127,6 +127,8 @@ namespace gfimaxtray
             notico.Text = "Reloading Clients+Sites-List";
             arrayclients.Clear();
             arraysites.Clear();
+            arrayservers.Clear();
+            arrayworkstations.Clear();
 
 
             // Get list of clients
