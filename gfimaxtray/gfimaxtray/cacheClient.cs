@@ -4,12 +4,12 @@ using System.Text;
 
 namespace gfimaxtray
 {
-    class cacheKunde
+    class cacheClient
     {
         public string name = "";
         public string clientid = "";
 
-        public cacheKunde(string tmpname, string tmpclientid)
+        public cacheClient(string tmpname, string tmpclientid)
         {
             name = tmpname;
             clientid = tmpclientid;

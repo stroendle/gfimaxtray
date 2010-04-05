@@ -39,18 +39,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cacheKunde.cs" />
+    <Compile Include="apiCommunication.cs" />
+    <Compile Include="cacheClient.cs" />
     <Compile Include="cacheServer.cs" />
     <Compile Include="cacheSite.cs" />
     <Compile Include="cacheWorkstation.cs" />
+    <Compile Include="clsNotifyBox.cs" />
+    <Compile Include="clsRegistry.cs" />
+    <Compile Include="failedCheck.cs" />
     <Compile Include="frmCheckresults.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCheckresults.Designer.cs">
       <DependentUpon>frmCheckresults.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmKonfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKonfiguration.Designer.cs">
+      <DependentUpon>frmKonfiguration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCheckresults.resx">
+      <DependentUpon>frmCheckresults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKonfiguration.resx">
+      <DependentUpon>frmKonfiguration.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -60,7 +76,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="App.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -72,7 +87,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="icons\maxicon_red.ico">
+    <Content Include="icons\maxtrayicon_green.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\maxtrayicon_gray.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\maxtrayicon_red.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

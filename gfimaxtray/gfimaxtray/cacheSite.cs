@@ -8,9 +8,9 @@ namespace gfimaxtray
     {
         public string siteid = "";
         public string sitename = "";
-        public cacheKunde siteCustomer;
+        public cacheClient siteCustomer;
 
-        public cacheSite(string tmpsitename, string tmpsiteid, cacheKunde tmpKunde)
+        public cacheSite(string tmpsitename, string tmpsiteid, cacheClient tmpKunde)
         {
             siteid = tmpsiteid;
             sitename = tmpsitename;
