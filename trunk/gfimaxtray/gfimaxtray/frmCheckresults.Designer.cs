@@ -38,8 +38,9 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(519, 65);
+            this.panel1.Size = new System.Drawing.Size(817, 65);
             this.panel1.TabIndex = 1;
+            this.panel1.Visible = false;
             // 
             // dataGrid1
             // 
@@ -48,18 +49,21 @@
             this.dataGrid1.HeaderForeColor = System.Drawing.SystemColors.ControlText;
             this.dataGrid1.Location = new System.Drawing.Point(0, 65);
             this.dataGrid1.Name = "dataGrid1";
-            this.dataGrid1.Size = new System.Drawing.Size(519, 393);
+            this.dataGrid1.Size = new System.Drawing.Size(817, 239);
             this.dataGrid1.TabIndex = 2;
             // 
             // frmCheckresults
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(519, 458);
+            this.ClientSize = new System.Drawing.Size(817, 304);
             this.Controls.Add(this.dataGrid1);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "frmCheckresults";
-            this.Text = "Form1";
+            this.ShowIcon = false;
+            this.Text = "Failed Checks";
+            this.Load += new System.EventHandler(this.frmCheckresults_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid1)).EndInit();
             this.ResumeLayout(false);
 

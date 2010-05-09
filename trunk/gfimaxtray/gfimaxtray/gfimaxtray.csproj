@@ -40,10 +40,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="apiCommunication.cs" />
-    <Compile Include="cacheClient.cs" />
-    <Compile Include="cacheServer.cs" />
-    <Compile Include="cacheSite.cs" />
-    <Compile Include="cacheWorkstation.cs" />
     <Compile Include="clsNotifyBox.cs" />
     <Compile Include="clsRegistry.cs" />
     <Compile Include="failedCheck.cs" />

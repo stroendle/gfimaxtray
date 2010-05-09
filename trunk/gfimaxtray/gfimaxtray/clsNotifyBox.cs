@@ -14,15 +14,13 @@ namespace gfimaxtray
 
         public void ShowBox(object message)
         {
-            // Erstellen der Form welche die Benachrichtigung einblendet
             m_Notify = new Form();
             m_Notify.FormBorderStyle = FormBorderStyle.None;
             m_Notify.AllowTransparency = true;
-            m_Notify.BackColor = Color.Magenta;
-            m_Notify.TransparencyKey = m_Notify.BackColor;
+            m_Notify.BackColor = Color.Red;
+            //m_Notify.TransparencyKey = m_Notify.BackColor;
             m_Notify.ShowInTaskbar = false;
 
-            // Label mit Mitteilung
             Label textLabel = new Label();
             textLabel.Text = (string)message;
             textLabel.Font = new Font(FontFamily.GenericSansSerif, 20.0f, FontStyle.Regular);
@@ -33,16 +31,13 @@ namespace gfimaxtray
             m_Notify.Controls.Add(textLabel);
             m_Notify.Size = textLabel.Size;
 
-            // Herausfinden an welche Position wir die Form setzen müssen, damit diese überhalb der Tray eingeblendet wird
             m_Notify.StartPosition = FormStartPosition.Manual;
             m_Notify.DesktopLocation = new Point(Screen.PrimaryScreen.Bounds.Width - m_Notify.Size.Width,
                                            Screen.PrimaryScreen.Bounds.Height - WindowHelper.GetTaskbarHeight() - m_Notify.Size.Height);
 
-            // Quick and Dirt: Da wir anschliessend den Thread anhalten, müssen wir noch alle Window Messages
-            // abarbeiten, damit unsere NotifyBox richtig gezeichnet wird.
             m_Notify.Show();
             Application.DoEvents();
-            Thread.Sleep(1000);
+            Thread.Sleep(10000);
             m_Notify.Close();
         }
     }
