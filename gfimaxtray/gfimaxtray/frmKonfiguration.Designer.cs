@@ -66,7 +66,7 @@
             this.buttonSpeichern.Name = "buttonSpeichern";
             this.buttonSpeichern.Size = new System.Drawing.Size(94, 30);
             this.buttonSpeichern.TabIndex = 3;
-            this.buttonSpeichern.Text = "Speichern";
+            this.buttonSpeichern.Text = "Save";
             this.buttonSpeichern.UseVisualStyleBackColor = true;
             this.buttonSpeichern.Click += new System.EventHandler(this.buttonSpeichern_Click);
             // 
