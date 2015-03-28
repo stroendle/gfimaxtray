@@ -1,0 +1,1 @@
+This utility checks your GFI Max (Managed Service Tool for Service Providers) account for erroneous servers and informs you appropriately.
